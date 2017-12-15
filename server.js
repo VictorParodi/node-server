@@ -18,7 +18,6 @@ app.use(express.static(__dirname + '/public'));
 app.get('/', (req, res) => {
     res.render('home', {
         pageTitle: 'Home Page !',
-        currentYear: new Date().getFullYear(),
         welcomeMessage: 'Welcome to this app!'
     });
 });
@@ -26,7 +25,6 @@ app.get('/', (req, res) => {
 app.get('/about', (req, res) => {
     res.render('about.hbs', {
         pageTitle: 'About Page!',
-        currentYear: new Date().getFullYear()
     });
 });
 
